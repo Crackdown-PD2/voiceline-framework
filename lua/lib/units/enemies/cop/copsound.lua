@@ -53,7 +53,8 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		hlp = "buddy_died",
 		buddy_died = "buddy_died",
 		use_gas = "use_gas",
-		spawn = "spawn"
+		spawn = "spawn",
+		tasing = "tasing"
 	}
 	local line_to_check = line_array[sound_name]
 	if self._unit:base():char_tweak()["custom_voicework"] then
