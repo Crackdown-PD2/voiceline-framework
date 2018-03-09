@@ -2,7 +2,13 @@ function CopDamage:die(attack_data)
 	if self._immortal then
 		debug_pause("Immortal character died!")
 	end
-	self._unit:sound():say("x02a_any_3p", true, nil, true)
+	if self._unit:base():char_tweak()["custom_voicework"] then
+		local voicelines = _G.voiceline_framework.BufferedSounds[self._unit:base():char_tweak().custom_voicework]
+		if voicelines and voicelines["death"] then
+			local line_to_use = voicelines.death[math.random(#voicelines.death)]
+			self._unit:base():play_voiceline(line_to_use, true)
+		end
+	end
 	local variant = attack_data.variant
 
 	self:_check_friend_4(attack_data)
