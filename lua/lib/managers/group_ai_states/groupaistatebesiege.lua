@@ -18,7 +18,7 @@ end
 
 function GroupAIStateBesiege:_voice_move_in_start(group)
 	for u_key, unit_data in pairs(group.units) do
-		if elf:chk_say_enemy_chatter(unit_data.unit, unit_data.m_pos, "go_go") then
+		if self:chk_say_enemy_chatter(unit_data.unit, unit_data.m_pos, "go_go") then
 			break
 		end
 	end
