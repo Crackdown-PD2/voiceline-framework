@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<mod name="VoicelineFramework" global_key="voiceline_framework">
+	<:include src="hooks.xml" />
+</mod>

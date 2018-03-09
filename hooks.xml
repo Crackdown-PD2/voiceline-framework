@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<hooks script_path="lua/lib/" hook_id="lib/">
+	<post script_path="Core.lua" :hook_id="entry"/>
+
+	<group :script_path="units/enemies/" :hook_id="units/enemies/">
+		<post :script_path="cop/copdamage.lua" :hook_id="cop/copdamage"/>
+		<post :script_path="cop/copbase.lua" :hook_id="cop/copbase"/>
+		<post :script_path="cop/copbrain.lua" :hook_id="cop/copbrain"/>
+		<post :script_path="cop/logics/coplogicbase.lua" :hook_id="cop/logics/coplogicbase"/>
+		<post :script_path="cop/copsound.lua" :hook_id="cop/copsound"/>
+		<post :script_path="medic/medicdamage.lua" :hook_id="medic/medicdamage"/>
+		<post :script_path="cop/huskcopdamage.lua" :hook_id="cop/huskcopdamage"/>
+	</group>
+	
+	<group :script_path="managers/group_ai_states/" :hook_id="managers/group_ai_states/">
+		<post :script_path="groupaistatebase.lua" :hook_id="groupaistatebase"/>
+		<post :script_path="groupaistatebesiege.lua" :hook_id="groupaistatebesiege"/>
+	</group>
+</hooks>
