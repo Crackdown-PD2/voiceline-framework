@@ -50,8 +50,8 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		h01 = "rescue_civ",
 		rdy = "ready",
 		r01 = "ready",
-		clr = "gogo",
-		att = "gogo",
+		clr = "clear",
+		att = "contact",
 		prm = "ready",
 		pos = "ready",
 		d01 = "grenade_out",
@@ -66,8 +66,14 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		buddy_died = "buddy_died",
 		use_gas = "use_gas",
 		spawn = "spawn",
-		tasing = "tasing",
-		heal = "heal"
+		tasing = "laugh",
+		heal = "heal",
+		tsr_x02a_any_3p = "death",
+		tsr_x01a_any_3p = "pain",
+		tsr_post_tasing_taunt = "laugh",
+		tsr_g90 = "buddy_died",
+		tsr_entrance = "gogo",
+		tsr_c01 = "contact"
 	}
 	local line_to_check = line_array[sound_name]
 	if self._unit:base():char_tweak()["custom_voicework"] then
