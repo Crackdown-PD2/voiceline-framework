@@ -3,7 +3,7 @@ function MedicDamage:heal_unit(unit, override_cooldown)
 	local difficulty_index = tweak_data:difficulty_to_index(Global.game_settings.difficulty)
 	local cooldown = tweak_data.medic.cooldown
 	
-	cooldown = managers.crime_spree:modify_value("MedicDamage:CooldownTime", cooldown)
+	cooldown = managers.modifiers:modify_value("MedicDamage:CooldownTime", cooldown)
 	if t < self._heal_cooldown_t + cooldown and not override_cooldown then
 		return false
 	end
@@ -51,7 +51,7 @@ function MedicDamage:heal_unit(unit, override_cooldown)
 		self._unit:movement():action_request(action_data)
 	end
 
-	managers.crime_spree:run_func("OnEnemyHealed", self._unit, unit)
+	managers.modifiers:run_func("OnEnemyHealed", self._unit, unit)
 	managers.network:session():send_to_peers("sync_medic_heal", self._unit)
 
 	return true
