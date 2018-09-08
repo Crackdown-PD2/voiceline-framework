@@ -9,4 +9,12 @@
  "image" : "res.png",
  "undisablable" : true,
  "disable_safe_mode" : false
+ "updates" : [
+    {
+        "identifier" : "vf_framework_autoupdate",
+        "host": {
+            "meta": "https://raw.githubusercontent.com/Crackdown-PD2/voiceline-framework/autoupdate/meta.json"
+        }
+    }
+ ]
 }
