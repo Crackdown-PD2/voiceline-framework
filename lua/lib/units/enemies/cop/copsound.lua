@@ -84,7 +84,10 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		bdz_entrance_elite = "spawn",
 		bdz_g90 = "gogo",
 		bdz_post_kill_taunt = "gogo",
-		bdz_visor_lost = "gogo"
+		bdz_visor_lost = "gogo",
+		cloaker_taunt_after_assault = "kill",
+        cloaker_taunt_during_assault = "kill",
+        clk_x02a_any_3p = "death"
 	}
 	local line_to_check = line_array[sound_name]
 	if self._unit:base():char_tweak()["custom_voicework"] then
