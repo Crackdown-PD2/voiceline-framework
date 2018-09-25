@@ -87,6 +87,8 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		bdz_visor_lost = "gogo",
 		cloaker_taunt_after_assault = "kill",
         cloaker_taunt_during_assault = "kill",
+        cpa_taunt_after_assault = "kill",
+        cpa_taunt_during_assault = "kill",
         clk_x02a_any_3p = "death"
 	}
 	local line_to_check = line_array[sound_name]
