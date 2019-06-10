@@ -31,7 +31,7 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		e04 = "ready",
 		e05 = "ready",
 		e06 = "ready",
-		i01 = "gogo",
+		i01 = "contact",
 		i02 = "gogo",
 		i03 = "kill",
 		lk3a = "cover_me",
