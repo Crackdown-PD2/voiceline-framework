@@ -53,7 +53,7 @@ function CopSound:say(sound_name, sync, skip_prefix, important, callback)
 		rdy = "ready",
 		r01 = "ready",
 		clr = "clear",
-		att = "contact",
+		att = "gogo",
 		a08 = "gogo",
 		a05 = "gogo",
 		prm = "ready",
