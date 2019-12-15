@@ -1,7 +1,7 @@
 [
     {
         "ident": "vf_framework_autoupdate",
-        "hash": "7515f8246d542c9ee6dac989601452229c12e770dce15dd1f1c9be84db044c9c",
+        "hash": "c199ce0cb7423817e50beb2b24404fdf6c17fc9a73b616a234c07b4eb36e1993",
         "download_url": "https://github.com/Crackdown-PD2/voiceline-framework/archive/master.zip",
         "patchnotes": "https://raw.githubusercontent.com/Crackdown-PD2/voiceline-framework/autoupdate/patchnotes.txt"
     }
